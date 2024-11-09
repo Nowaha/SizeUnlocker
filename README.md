@@ -1,5 +1,5 @@
 # SizeUnlocker
-Since WEBFISHING v1.09, your size is very limited. This mod removes that limit, allowing you to be as big as you want. This is more meant to be used as a dependency: *you still need another mod to actually increase your size.*
+Since WEBFISHING v1.09, your size is very limited. This mod makes that limit much more lenient (to a size where it won't crash your game), allowing you to be as big as you want. This is more meant to be used as a dependency: *you still need another mod to actually increase your size.*
 
 <sub>A [WEBFISHING](https://store.steampowered.com/app/3146520/WEBFISHING/) mod using [GDWeave](https://github.com/NotNite/GDWeave/), made in `C#`.</sub>
 
