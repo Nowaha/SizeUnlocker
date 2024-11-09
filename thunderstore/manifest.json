@@ -1,7 +1,7 @@
 {
     "name": "SizeUnlocker",
     "description": "Mod that makes the clamping of player size more lenient (you can go big!! or small!) - Meant to be used as a dependency.",
-    "version_number": "1.0.0",
+    "version_number": "1.0.1",
     "website_url": "https://github.com/Nowaha/SizeUnlocker",
     "dependencies": [
         "NotNet-GDWeave-2.0.12"
