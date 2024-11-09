@@ -1,0 +1,9 @@
+{
+  "Id": "SizeUnlocker",
+  "AssemblyPath": "SizeUnlocker.dll",
+  "Metadata": {
+      "Name": "SizeUnlocker",
+      "Author": "Nowaha",
+      "Version": "1.0.0"
+  }
+}
