@@ -14,7 +14,7 @@ namespace SizeUnlocker
             var firstClamp = new MultiTokenWaiter([
                 t => t is IdentifierToken { Name: "scale" },
                 t => t.Type is TokenType.OpAssign,
-                t => t is IdentifierToken { Name: "clamp" },
+                t => t.Type is TokenType.BuiltInFunc, // clamp
                 t => t.Type is TokenType.ParenthesisOpen,
                 t => t is IdentifierToken { Name: "animation_data" },
                 t => t.Type is TokenType.BracketOpen,
@@ -30,7 +30,7 @@ namespace SizeUnlocker
                 t => t.Type is TokenType.Period,
                 t => t is IdentifierToken { Name: "y" },
                 t => t.Type is TokenType.OpAssignMul,
-                t => t is IdentifierToken { Name: "clamp" },
+                t => t.Type is TokenType.BuiltInFunc, // clamp
                 t => t.Type is TokenType.ParenthesisOpen,
                 t => t is IdentifierToken { Name: "animation_data" },
                 t => t.Type is TokenType.BracketOpen,
@@ -44,7 +44,7 @@ namespace SizeUnlocker
             foreach (var token in tokens)
             {
                 if (skip-- > 0) continue;
-
+                
                 if (firstClamp.Check(token))
                 {
                     // -2.0, 10.0
